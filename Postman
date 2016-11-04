@@ -1,0 +1,15 @@
+Postman is a great API tool for Tester.
+For example:
+
+tests["Status code is 200"] = responseCode.code === 200;
+
+if(responseCode.code === 200){
+    if(responseBody !== null & responseBody.has("result")){
+    var jsonData = JSON.parse(responseBody);
+    tests["Connect Result"] = jsonData.result === true ;
+    }
+    else{
+    console.log();
+        
+    }
+}
